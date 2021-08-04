@@ -1,52 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
 body{
-background-color:#655ec4 ;
+    font-family: 'Roboto', sans-serif;
 }
-.box{
-    width: 500px; 
-    margin: auto;
-    background-color: white;
-    margin-top:100px;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 50px;
+.container{
+    width: 1140px;
+    margin: 0 auto;
+
 }
-.box h1{
-    text-align: center ;
-    font-family: Bahnschrift SemiBold;
-    font-weight: 400px;
-    font-size:40px;
+/* navbar*/
+nav{
+    background-color: greenyellow;
+    padding: 20px 0;
     
 }
-.box p{
+/*hero-section*/
+#hero_action{
+    background-image:url(banner.ban.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+   
+}
+#hero_action .content{
     text-align: center;
-    margin-top: -15px;
+    padding-top: 200px;
+    padding-right: 400px;
+    padding-bottom: 250px;
+    color: white;
+}
+#hero_action .content h1{
+    font-size: 90px;
+    text-transform: uppercase;
+}
+#hero_action .content .after-heading{
+    height: 2px;
+    width: 400px;
+    margin-left: 180px;
+    background: greenyellow;
+    margin: 0 auto;
+}
+#hero_action .content p{
+    font-size: 24px ;
+    font-weight: 100px;
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#hero_action .content .btn{
+    border-radius: 10%;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: yellowgreen;
+    
+ 
+}
+#hero_action .content i{
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: 900;
+}
+/*third section*/
+}
+.third-section .content{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.third-section{
+    background: yellowgreen;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 0 ;
+}
+.third-section h2{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 900;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+   
+}
+.third-section p{
+    line-height: 1.5;
+    color: black;
+    font-weight: 600;
+}
+/*fourth section*/
+.fourth-section{
+    background-color: rgb(187, 194, 194);
+    padding-top: 25px;
+    padding-bottom: 70px;
+    
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.col30{
+    flex-basis: 32%;
+    margin-right: 6px;
+    
+    
+}
+.fourth-section .container{
+    text-align: center;
+    padding-top: 28px;
+}
+.fourth-section .container .box-icon{
+    width: 60px;
+    height: 60px;
+    background: rgb(156, 253, 0);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.fourth-section .container .box-icon i{
+    color:black;
+    font-size: 30px;
+    padding: 15px;
+}
+.fourth-section .container  h3{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.fourth-section .container p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+/*showcase section*/
+.showcase{
+    background-color: #ffffff;
+    padding-bottom: 60px;
+}
+.showcase .container{
+    text-align: center;
+}
+.showcase h2{
+font-size: 26px;
+font-weight: 600;
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+.showcase p{
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.showcase .showcase-img .img-box{
+    position: relative;
+    
+}
+.showcase .showcase-img .img-box img{
+    width: 100%;
+}
+.showcase .showcase-img .img-box .hover-box{
+    background: rgb(102, 67, 182) ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.showcase .showcase-img .img-box .hover-box ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+.showcase .showcase-img .img-box .hover-box  li{
+    height: 40px;
+    width: 40px;
+    border: 2px solid whitesmoke;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 9px;
+    
+
+}
+.showcase .showcase-img .img-box .hover-box  li i{
+   color: whitesmoke; 
+}
+.showcase .showcase-img .img-box:hover .hover-box{
+    transform: scale(1);
+}
+/*contact-form*/
+.contact-form{
+    background-color: rgb(185, 181, 178);
+    padding-top: 60px;
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+}
+.box{
+    background: rgb(96, 99, 94);
+    height: 700px;
+    width: 600px;
+    margin-left: 400px;
+    border-radius: 5px;
+    
+    
+}
+.contact-form .form{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.contact-form h1{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.contact-form p{
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+.contact-form .box .row5 .xx{
+    padding: 15px;
+    margin-left: 30px;
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 5px;
     font-size: 20px;
 }
-.box .xxx{
-    width: 35%;
-
+.contact-form .box .row5 .contactform{
+    width: 86%;
+    padding: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 20px;
 }
-
-.from-control{
-    background-color: rgb(199, 212, 211);
-    margin: 10px;
-    padding: 10px;
-    border: rgb(184, 174, 184) 2px solid;
-    width: 80%;
+.contact-form .box .row5 .msg{
+    width: 86%;
+    padding-bottom: 70px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
-.checkbox{
+.contact-form .box .row5 .checkbox{
+    width: 18px;
+    margin-left: 30px;
     margin-top: 10px;
 }
-
-.btn{
-    width:40% ;
-    margin: 0 auto;
-    background-color: rgb(0, 240, 40);
-    display: block;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 18px;
-    margin-top: 30px;
-    border:none;
-    border-radius: 5px;
+.contact-form .box .row5 .btn{
+    
+    font-size: 22px;
+    margin-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    background: green;
 }
